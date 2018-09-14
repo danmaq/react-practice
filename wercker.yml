@@ -1,0 +1,14 @@
+box: node
+
+build:
+  steps:
+    - npm-install
+    - script:
+      name: Build.
+      code: npm run build
+
+deploy:
+  steps:
+    - gh-pages:
+        token: $GIT_TOKEN
+        basedir: build
