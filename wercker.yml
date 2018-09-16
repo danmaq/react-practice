@@ -9,6 +9,6 @@ build:
 
 deploy:
   steps:
-    - uetchy/gh-pages:
+    - lukevivier/gh-pages:
         token: $GIT_TOKEN
-        path: build
+        basedir: build
