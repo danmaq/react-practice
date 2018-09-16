@@ -1,0 +1,7 @@
+box: node
+
+build:
+  steps:
+    - script:
+      name: No-Operation.
+      code: echo Hello,world!
